@@ -1,7 +1,10 @@
-char * strcpy( char *strDest, const char *strSrc )//½«Ô´×Ö·û´®¼Óconst£¬±íÃ÷Ö»¶ÁÊÇÊäÈë²ÎÊı
+char * strcpy( char *strDest, const char *strSrc )//å°†æºå­—ç¬¦ä¸²åŠ constï¼Œè¡¨æ˜åªè¯»æ˜¯è¾“å…¥å‚æ•°
 {
-    assert( (strDest != NULL) && (strSrc != NULL) );//¶ÔÔ´µØÖ·ºÍÄ¿µÄµØÖ·¼Ó·Ç0¶ÏÑÔ£¬ÅĞ¶ÏÓĞĞ§ĞÔ
+    assert( (strDest != NULL) && (strSrc != NULL) );//å¯¹æºåœ°å€å’Œç›®çš„åœ°å€åŠ é0æ–­è¨€ï¼Œåˆ¤æ–­æœ‰æ•ˆæ€§
     char *address = strDest;
-    while( (*strDest++ = *strSrc++) != 0');//Öğ¸ö¸´ÖÆ
+    while( (*strDest++ = *strSrc++) != 0');//é€ä¸ªå¤åˆ¶
     return address;
 }
+/**
+è¿œç¨‹
+**/
